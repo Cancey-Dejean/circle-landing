@@ -28,7 +28,7 @@
 
   /* Handle on hover */
   ::-webkit-scrollbar-thumb:hover {
-    @apply bg-[#3c8aac];
+    @apply bg-black;
   }
 }
 
@@ -213,7 +213,7 @@
 
   /* Syllabus */
   .syllabus {
-    @apply py-[100px] xl:py-[200px];
+    @apply py-[100px] lg:py-[200px];
   }
 
   .syllabus-inner {
