@@ -885,12 +885,14 @@ p {
 /* Banner */
 
 .banner {
+  border-bottom-right-radius: 0px;
+  border-bottom-left-radius: 0px;
   background-image: url('../images/hero.svg');
   background-size: cover;
   background-position: left center;
   background-repeat: no-repeat;
   padding-top: 0px;
-  padding-bottom: 20px;
+  padding-bottom: 100px;
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
 }
@@ -898,6 +900,13 @@ p {
 @media (min-width: 640px) {
   .banner {
     padding-bottom: 65px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .banner {
+    border-bottom-right-radius: 100px;
+    border-bottom-left-radius: 100px;
   }
 }
 
@@ -1057,9 +1066,16 @@ p {
   background-color: rgb(248 239 229 / var(--tw-bg-opacity));
   padding-top: 40px;
   padding-bottom: 40px;
-  padding-left: 80px;
-  padding-right: 80px;
+  padding-left: 40px;
+  padding-right: 40px;
   text-align: center;
+}
+
+@media (min-width: 640px) {
+  .banner-stats {
+    padding-left: 80px;
+    padding-right: 80px;
+  }
 }
 
 @media (min-width: 1024px) {
@@ -1897,8 +1913,15 @@ footer {
   align-items: center;
   justify-content: space-between;
   gap: 30px;
-  padding-left: 4vh;
-  padding-right: 4vh;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+@media (min-width: 1024px) {
+  .footer-top {
+    padding-left: 60px;
+    padding-right: 60px;
+  }
 }
 
 @media (min-width: 1280px) {
@@ -1977,8 +2000,15 @@ footer .animate-link::after {
   flex-direction: column-reverse;
   justify-content: space-between;
   gap: 30px;
-  padding-left: 4vh;
-  padding-right: 4vh;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+@media (min-width: 1024px) {
+  .footer-bottom {
+    padding-left: 60px;
+    padding-right: 60px;
+  }
 }
 
 @media (min-width: 1280px) {
@@ -2011,13 +2041,20 @@ footer .animate-link::after {
   max-width: 300px;
   flex-wrap: wrap;
   align-items: center;
-  justify-content: space-between;
-  -moz-column-gap: 24px;
-       column-gap: 24px;
+  justify-content: center;
+  gap: 16px;
+}
+
+@media (min-width: 640px) {
+  .social {
+    justify-content: space-between;
+    gap: 24px;
+  }
 }
 
 @media (min-width: 1280px) {
   .social {
+    margin-right: 0px;
     max-width: 100%;
   }
 }
@@ -2112,5 +2149,3 @@ footer .animate-link::after {
 .filter {
   filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
 }
-
-/* Test */
